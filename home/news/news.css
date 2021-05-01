@@ -1,0 +1,355 @@
+*{ 
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+ }
+/*--header--*/
+.header{
+	width: 100%;
+	height: 110px;
+	text-transform: uppercase;
+	color: #555555;
+	/*font-family: 'Open Sans', sans-serif;*/
+	font-family: Source Sans Pro;
+	letter-spacing: 2.5px;
+	font-weight: bold;
+	border-bottom: 1px solid gray;
+}
+.header .menu{
+	display: flex;
+	width: 100%;
+	height: 100%;
+	margin: auto;
+	justify-content: center;
+}
+.header .menu .nav-menu{
+	width: 31%;
+}
+.header .nav-menu ul{
+	display: inline-flex;
+	margin-top: 20px;
+
+}
+.header .nav-menu ul li{
+	list-style-type: none;
+	font-size: 16px;
+	font-weight: bold;
+	width: 165px;
+	padding: 25px 0;
+}
+.header .nav-menu ul li:nth-child(2){
+	padding-left: 15px;
+}
+.header .nav-menu ul li a{
+	text-decoration: none;
+	color: #555555;
+}
+.header .nav-menu ul li a:hover{
+	position: relative;
+	border-bottom: 1px solid #3c5e2c;
+	color: #3c5e2c;
+}
+/*.header .nav-menu ul li a:after{
+	position: relative;
+	content: '';
+	display: block;
+	width: 0;
+	height: 1px;
+	background-color: #3c5e2c;
+	transform: width 2s;
+}
+.header .nav-menu ul li a:hover::after{
+	width: 100%;
+	transform: width 2s;
+}*/
+.header .nav-menu .wrap-drop{
+	display: none;
+}
+.header .nav-menu ul li:hover .wrap-drop{
+	display: block;
+	position: relative;
+	width: 200px;
+	margin-top: 20px;
+	margin-left: -20px;
+	z-index: 9;
+	background-color: white;
+	box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.15);
+	border-radius: 0px 0px 7px 7px;
+	animation-name: cd;
+    animation-duration: 0.4s;
+}
+@keyframes cd{
+    from {top:40px; opacity:0}
+    to {top:0; opacity:1}
+}
+.header .nav-menu ul li:hover .wrap-drop ul{
+	display: block;
+	margin: 8px 0 8px 15px;
+}
+.header .nav-menu ul li:hover .wrap-drop ul li{
+	padding: 10px;
+	background: transparent;
+	border-bottom: 0.5px solid #ddd;
+	text-align: left;
+	letter-spacing: 3px;
+	text-transform: capitalize;
+	font-size: 14px;
+}
+.header .nav-menu ul li:hover .wrap-drop ul li:last-child{
+	border-bottom: none;
+}
+.header .logo-brand{
+	width: 8%;
+	height: 50%;
+	margin: 35px 50px 0 50px;
+} 
+.header .brand{
+	width: 77%;
+	margin: auto;
+}
+.header .brand img{
+	width: 100%;
+	height: 100%;
+	max-width: 100%;
+	object-fit: contain;
+}
+
+/*.header .nation{
+	width: 5%;
+	height: 10%;
+	position: relative;
+    top: -70px;
+    right: -1300px;
+
+}
+.header .nation img{
+	width: 30%;
+}*/
+/*--end header--*/
+
+
+/*--- news---*/
+
+
+.overflow{
+	width: 100%;
+	min-height: 1260px;
+	padding-top: 30px;
+	font-family: "Times New Roman", Times, serif;
+}
+.overflow .main{
+	width: 960px;
+	min-height: 1150px;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+}
+.overflow .main .block{
+	width: 625px;
+}
+.overflow .main .block .post-box{
+	width: 625px;
+	height: auto;
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 30px;
+	margin-bottom: 30px;
+	border-bottom: 1px solid #80808052;
+}
+.overflow .main .block .post-box a{
+	text-decoration: none;
+}
+.overflow .main .block .post-box .thumb{
+	width: 243px;
+	height: 165px;
+	border: 1px solid #3c5e2c;
+}
+.overflow .main .block .post-box .thumb img{
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+}
+.overflow .main .block .post-box .content{
+	width: 352px;
+}
+.overflow .main .block .post-box .content .title h2{
+	font-family: "LuloCleanW01-OneBold";
+	color: #555555;
+	font-size: 15px;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+}
+.overflow .main .block .post-box .content .title h2:hover{
+	color: #3c5e2c;
+}
+.overflow .main .block .post-box .content .sapo{
+	font-size: 14px;
+	letter-spacing: 2px;
+	color:  #232323;
+}
+.overflow .main .aside{
+	width: 300px;
+	background-color: #eee;
+	height: 260px;
+}
+.overflow .main .aside .news-letter{
+	text-align: center;
+	color: #555555;
+	padding: 20px 10px;
+}
+.overflow .main .aside .news-letter h5{
+	margin-bottom: 5px;
+	font-size: 13px;
+}
+.overflow .main .aside .news-letter .brand{
+	margin: auto;
+	width: 100px;
+	height: 50px;
+	margin-bottom: 30px;
+}
+.overflow .main .aside .news-letter .brand img{
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+}
+.overflow .main .aside .news-letter p{
+	padding: 0 25px;
+	color: #666;
+	font-size: 16px;
+	margin-bottom: 20px;
+	letter-spacing: 2px;
+}
+.overflow .main .aside .news-letter .email{
+	width: 180px;
+	height: 33px;
+	padding: 8px 8px;
+	font-size: 12px;
+	color: #b4b9bc73;
+	font-weight: bold;
+	letter-spacing: 1px;
+}
+.overflow .main .aside .news-letter .email[type="text"]{
+	color: #000000;
+}	
+.overflow .main .aside .news-letter .btn{
+	width: 70px;
+	height: 33px;
+	padding: 8px 8px;
+	background-color: #3c5e2c;
+	color: white;
+	font-size: 12px;
+	font-weight: bold;
+	cursor: pointer;
+}
+/*---see-more---*/
+.overflow .read-more{
+	width: 960px;
+	margin: auto;
+	margin-bottom: 30px;
+}
+.overflow .read-more .btn{
+	border: 1px solid #D3D3D3;
+	border-radius: 5px;
+	background-color: white;
+	width: 100%;
+	text-align: center;
+	font-size: 15px;
+	cursor: pointer;
+	padding: 15px;
+	color: #7d7d7d;
+	font-weight: bold;
+}
+.overflow .read-more .btn:hover{
+	background-color: #c3c3c3;
+}
+/*---end see-more---*/
+/*---end news---*/
+
+/*---bottom and footer---*/
+.bottom{
+	height: 170px;
+	border-top: 1px solid #3c5e2c;
+}
+.bottom .contact{
+	padding-top: 25px;
+	max-width: 960px;
+	height: auto;
+	display: grid;
+	grid-template-columns: 480px auto;
+	margin: auto;
+}
+.bottom .contact h2{
+	font-size: 15px;
+	text-transform: uppercase;
+	color:  #3c5e2c;
+	padding-bottom: 5px;
+}
+/*.bottom .contact .right{
+	margin-left: 240px;
+}*/
+.bottom .contact .left .fab{
+	padding: 8px 8px;
+	color: #3c5e2c;
+	font-size: 25px;
+	width: 35px;
+	height: 10px;
+}
+.bottom .contact .right p{
+	font-size: 14px;
+	letter-spacing: 2px;
+	color: black;
+}
+
+/*form email*/
+.bottom .contact .right .form{
+	margin: 10px 0;
+}
+.bottom .contact .right .form .email{
+	width: 250px;
+	height: 33px;
+	padding: 8px 8px;
+	border: 1px solid gray;
+	font-size: 12px;
+	color: #b4b9bc;
+}
+.bottom .contact .right .form .email:focus{
+	border: 1px solid #3c5e2c;
+}
+.bottom .contact .right .form .btn{
+	width: 95px;
+	height: 33px;
+	padding: 8px 8px;
+	background-color: #3c5e2c;
+	color: white;
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight: bold;
+	cursor: pointer;
+}
+.bottom .contact .right .form p{
+	margin-top: 10px;
+	font-size: 14px;
+	color: #b4b9bc;
+}
+/*---end form email---*/
+.footer{
+	width: 100%;
+	height: 60px;
+	font-size: 11px;
+    border-top: 1px solid #232323;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: #3c5e2c;
+    color: #fff;
+    font-weight: bold;
+}
+.footer .copyright{
+	max-width: 960px;
+	margin: auto;
+	letter-spacing: 2px;
+}
+.footer .copyright span{
+	text-transform: uppercase;
+}
+/*---end bottom and footer---
